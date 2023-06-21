@@ -1,0 +1,11 @@
+steps is being followed while creating this project.
+======================================================
+
+1. create index.js and  import inside it  app.js file
+2. create app.js  and export it.
+3. crate a config folder and write a function to connect with mongodb  database using mongoose.
+4. create routes folder and write there userRoute.js import controller
+   function and export the userRoute file.
+5. import the userRoute file inside app.js and use it there.
+6. create a controller folder and write the conroller function there and import the  hashPassword function and userModel from helper and models  folders respect ively.
+7. Therefore, you have to create helper and models folder before step 6.

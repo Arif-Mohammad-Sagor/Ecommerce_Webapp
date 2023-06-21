@@ -1,13 +1,13 @@
 const express = require('express');
-const dotenv = require('dotenv');
-
 const app = express();
+const userRouter = require('./routes/userRoute');
 
-app.get('/', (req, res) => {
-    res.send('i am default route')
-})
+app.use(express.json());
+
+app.use('/api/user', userRouter);
 
 app.use((req, res) => {
-    res.send('invalid api request')
+    res.send({message:"Invalid request"})
 })
+
 module.exports = app;
